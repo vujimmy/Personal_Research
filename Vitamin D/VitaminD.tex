@@ -2,21 +2,23 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage[backend=bibtex]{biblatex}
 \addbibresource{references.bib} %Import the bibliography file
-\usepackage{hyperref}
+% \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{float}
 \usepackage{geometry}
-\author{Jimmy}
+\usepackage{svg}
 \geometry{a4paper, margin=1in}
 \title{\textbf{Vitamin D}}
 \date{Infos assembled by Jimmy \\
-All the references are displayed at the end of the document
-Started writing on 18th November 2025
+All the references are displayed at the end of the document \\
 }
 \begin{document}
 
-
 \maketitle
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm]{vitamine-D-title.png}
+\end{figure}
 
 \newpage
 \tableofcontents
@@ -25,84 +27,137 @@ Started writing on 18th November 2025
 \section{What are vitamins, in general ?}
 Simply put, vitamins are vital substances for the well-being of a person. 
 They are active in growth, skeletal development, use of micro-nutrients (like Calcium, Zinc, Magnesium, Phosphorus etc.), sight (e.g. Vitamin A), blood clotting, nervous system and immune system, DNA production, etc. \cite{ANSESWHATAREVITAMINS}. 
-However, the body cannot synthetize vitamins by itself, EXCEPT Vitamin D which is the main focus of this paper, and vitamin K.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm]{all vitamins.png}
+\end{figure}
+\\
+However, the body CANNOT synthetize (aka produce) vitamins by itself, EXCEPT Vitamin D which is the main focus of this paper, and vitamin K.
 An appropriate intake of vitamins can prevent cancer, cardiovascular diseases and many age-related diseases.
 Overconsumption of vitamins can be toxic for the body and vitamin deficiency can lead to clinical or pathological disorders.
 \\
 Vitamins DO NOT give energy as they contain 0 calorie, thus "faire le plein de vitamines pour avoir de l'énergie" is a misleading sentence, but having an adequate intake of all the needed vitamins is good to perform your daily activities and to keep your body healthy and functional.
 
 
-
 \section{What is Vitamin D ?}
 \label{What is Vitamin D ?}
+\subsection{Types of Vitamin D}
 There are two types of Vitamin D (but they are very very similar nutritionally, so we group them as just "Vitamin D") : Vitamin D2 and Vitamin D3.
 \begin{itemize}
-    \item Vitamin D2 is found in plants and shrooms (pretty vegan friendly), 
-    \item Vitamin D3 is mostly found in oily fish, egg yolk and fortified diary products (a lot less vegan friendly).
+    \item Vitamin D2 (ergocalciferol) is found in plants and shrooms (pretty vegan friendly), 
+    \item Vitamin D3 (cholecalciferol) is mostly found in oily fish, egg yolk and fortified diary products (a lot less vegan friendly).
 \end{itemize}
-Vitamin D is a liposoluble vitamin, which means it dissolves in fat \cite{ANSESWHATAREVITAMINS}. 
-Because Vitamin D is stored in fat, there is a higher risk of toxicity if the intake is too high. 
-The amount of fat with which vitamin D is ingested does not seem to significantly modify the bioavailability (aka absorption) of vitamin D3 \cite{borelVitaminBioavailabilityState2015}. \\
-If the body is exposed to the sunlight, it can synthetize this vitamin (more precisely Vitamin D3). 
-15 to 20 minutes in the sun (safely) is enough to get your daily intake of Vitamin D, as sunlight is the major source of this vitamin.
-Dark skin people can have a harder time synthetizing Vitamin D and sunscreen can also impair its synthesis.
-The body stops producing vitamin D from sunlight when the needs are met, so over-exposition to sunlight for Vitamin D is useless (or even dangerous, c.f. skin cancer) \cite{VeganPratique}. 
-\\ 
-Vitamin D plays a crucial role in the quality of bone tissues, muscular tissues and immunue system, as almost every organ and cell in the body has a Vitamin D receptor \cite{holickEvidencebasedDbateHealth2012}.
+Vitamin D is a liposoluble vitamin (in reality it is a hormone, but in practice a common mortal like me does not need to make that difference anyway), which means it dissolves in fat \cite{ANSESWHATAREVITAMINS}. 
+Because Vitamin D is stored in fat (in the liver and the body's fatty tissue), there is a higher risk of toxicity if the intake is too high. 
+The amount of fat with which Vitamin D is ingested does not seem to significantly modify the bioavailability (aka absorption) of Vitamin D3 \cite{borelVitaminBioavailabilityState2015}.
 
+\subsection{Synthesis by sunlight}
+If the body is exposed to the sunlight, it can synthetize this vitamin (more precisely Vitamin D3) in the skin by UV rays.
+15 to 20 minutes in the sun (safely) is enough to get approximatively 80\% \cite{akpinarVitaminImportantAnxiety2022} your daily intake of Vitamin D, as sunlight is the major source of this vitamin.
+The remaining 20\% is found in your diet.
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=8cm]{sunshine vitamine.jpeg}
+\end{figure}
+\noindent
+People with darker skin can have a harder time synthetizing Vitamin D. Sunscreen, pollution, age and seasons can also impair its synthesis \cite{LESCUYER}.
+The body stops producing Vitamin D from sunlight when the needs are met, so over-exposition to sunlight for Vitamin D is useless \cite{VeganPratique} (or even dangerous, c.f. skin cancer \cite{skincancer}). 
+Indeed, in longer exposure to sunlight, compounds called "lumesterol" are formed and they do not show Vitamin D activity \cite{akpinarVitaminImportantAnxiety2022}. 
 
-
+\subsection{Need for Magnesium}
+Vitamin D CANNOT be metabolized ("transformed via chemical reactions and used") by the body without the necessary Magnesium level. 
+It means that, without enough Magnesium, Vitamin D is stored but not used. 50\% of American are Magnesium deficient. 
+\\ \\
+The recommanded Magnesium intake is 420 micrograms for men and 320 micrograms for women.
+Foods high in magnesium include almonds, bananas, beans, broccoli, brown rice, cashews, egg yolk, fish oil, flaxseed, green vegetables, milk, mushrooms, other nuts, oatmeal, pumpkin seeds, sesame seeds, soybeans, sunflower seeds, sweet corn, tofu, and whole grains \cite{AOA}.
+\\ \\
+Vitamin D itself contributes to the good absorption of Magnesium \cite{ApyformeVitamineD}, so these two compounds kinda have a love-love relationship.
+\subsection{Recommanded Vitamin D daily intake}
+The recommanded intake of Vitamin D is 600 IU (International Unit) per day for children and adults, and 800 IU for elders \cite{mayoclinicVitaminD} \cite{VitaminDIntakeMedlinePlus}. 
+IU is a unit used to measure vitamin activity and \textbf{differs for each substance}. 
+\\
+\textbf{For Vitamin D}, 40 IU = 1 microgram. Thus 600 IU = 15 micrograms and 800 IU = 20 micrograms. 
 
 \section{Vitamin D benefits}
+Vitamin D plays a crucial role in the quality of bone tissues, muscular tissues and immune system, as almost every organ and cell in the body has a Vitamin D receptor \cite{holickEvidencebasedDbateHealth2012}.
 \subsection{Calcium and Phosphorus regulation}
+Vitamin D helps in absorbing Calcium (which, in itself, is not that easy to get) \cite{ANSESWHATAREVITAMINS} \cite{grantBenefitsRequirementsVitamin} and Phosphorus in the blood. 
 \subsubsection{Calcium}
-Vitamin D helps in abosorbing Calcium (which is not that easy to get) \cite{ANSESWHATAREVITAMINS} \cite{grantBenefitsRequirementsVitamin} and Phosphorus in the blood. 
-\\
 A good Calcium regulation leads to : 
 \begin{itemize} 
-    \item optimal tissue mineralization : bones, teeth and cartilage (ears, nose),
-    \item good musucular contraction,
-    \item good nervous transmission,
-    \item good coagulation (liquid blood changes into semisolid blood clots, which helps preventing blood loss from damaged blood vessels) \cite{BloodCoagulation}
+    \item Optimal tissue mineralization : bones, teeth and cartilage (ears, nose)
+    \item Good musucular contraction
+    \item Good nervous transmission
+    \item Good coagulation (liquid blood changes into semisolid blood clots, which helps preventing blood loss from damaged blood vessels) \cite{BloodCoagulation}
+    \item Good immune health and hormone regulation \cite{INSERM}
+    \item Cell differentiation (an unspecialized cell that takes on individual characteristics to become a specialized cell \cite{CellDifferentiation})
 \end{itemize}
 Too much Vitamin D tends to increase Calcium levels too much in the blood, which is NOT good for cardiovascular and renal health. 
+Plus, you can experience headaches, nausea or excessive fatigue \cite{INSERM}.
 \subsubsection{Phosphorus}
 
-Phosphorus is a very promiment component in the body and is fairly easy to find in food. 
+Phosphorus is a very promiment component in the body and is fairly easy to find in food.\\
 It helps with apoptosis (the natural and planned death of the cells) and 
 it is a component of 
-ATP (Adenosine Triphosphate, that comes often in nutrition), which acts as the body primary source of energy. 
-\\
+\textbf{ATP} (stands for "\textbf{A}denosine \textbf{T}ri\textbf{P}hosphate", that comes often in nutrition), which acts as the body primary source of energy. 
+\\ \\
 Phosphorus is also found in DNA (which stores genetic information) and RNA (a messenger that helps to synthetize proteins). 
-Thus, without phosphorus, the body would NOT be able to properly creates genes, proteins and new cells.
-More, phospholipids (phosphorus + saturated fat + unsaturated fat) make up your cell membranes \cite{Phosphorus}.
-\\
+Thus, without Phosphorus, the body would NOT be able to properly create genes, proteins and new cells. 
+\\ \\
+Furthermore, Phosphorus is part of compounds called "phospholipids" (Phosphorus + saturated fat + unsaturated fat, c.f. my document on olive oil for more infos on fats) that make up your cell membranes \cite{Phosphorus}.
+\begin{figure}[h!]
+    \centering
+    \includesvg[width=4cm]{phospholipidsvg.svg}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=10cm]{lipids_phospholipids.jpg}
+\end{figure}
 % Therefore, Vitamin D is very useful to ease the absorption of two essential nutrients.
+\newpage
 \subsection{Slowing down cell aging}
 A very recent study (June 2025) \cite{zhuVitaminD3Marine2025} suggests that Vitamin D supplements may lead to a strategy to counter biological aging.
-Telomeres are regions of DNA \cite{Telomere} and shorten every time a cell divides; this shortening has been linked to aging and to age-related diseases like vascular dementia, type II diabetes, and cancer.
-The study showed that the telomeres exposed to Vitamin D are longer than those who were not, which is equivalent to 3 years of aging \cite{NHI}.
-\section{Vitamin D deficiency}
-Vitamin D deficiency is very common worldwide (1 billion children and adults at risk \cite{holickHealthBenefitsVitamin2011}). 
-% Furthermore, aging decreases the body's ability to absorb Vitamin D. 
+Telomeres are regions of DNA \cite{Telomere} and shorten every time a cell divides. This shortening has been linked to aging and to age-related diseases like vascular dementia, type II diabetes, and cancer.
+\\ 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=10cm]{telomere.png}
+\end{figure}
 \\
-Vitamin D deficiency can lead to :
+\noindent
+The study showed that the telomeres exposed to Vitamin D are longer than those which were not, and that is equivalent to 3 years of aging \cite{NHI}.
+
+\section{Vitamin D deficiency}
+Vitamin D deficiency is very common worldwide (1 billion children and adults at risk \cite{holickHealthBenefitsVitamin2011}).
+In Europe, 40\% of the population has a Vitamin D deficiency \cite{akpinarVitaminImportantAnxiety2022}. During winter, in France, 75\% of the population lacks Vitamin D \cite{Anamacap} \\
+For example, Vitamin D deficiency can lead to :
+% Furthermore, aging decreases the body's ability to absorb Vitamin D. 
 \begin{itemize}
-    \item Muscular issues (weakness, aches) \cite{ANSESWHATAREVITAMINS} \cite{holickHealthBenefitsVitamin2011} \cite{grantBenefitsRequirementsVitamin}
+    \item Muscular issues (weakness, aches) \cite{ANSESWHATAREVITAMINS} \cite{grantBenefitsRequirementsVitamin} \cite{holickHealthBenefitsVitamin2011}
+    \item Rickets (soft and weak bones in children)
     \item Osteomalacia (decalcification of the bones, which can lead to bone deformation and a higher risk of fracture) \cite{Osteomalacie},
     \item Osteoporosis (your bones become weak and brittle) \cite{ANSESWHATAREVITAMINS}
-    \item Increase risk of cardiovascular diseases \cite{holickHealthBenefitsVitamin2011}
-    \item Increase risk of autoimmune diseases \cite{holickHealthBenefitsVitamin2011}
-    \item Type 1 and Type 2 diabetes \cite{grantBenefitsRequirementsVitamin} \cite{zittermannEstimatedBenefitsVitamin2010} \cite{holickHealthBenefitsVitamin2011}
+    \item Multiple sclerosis (breakdown of the protective covering of nerves called "myelin") \cite{MS}
+    \item Increased symptoms of depression and anxiety \cite{akpinarVitaminImportantAnxiety2022}
+    \item Increased risk of cardiovascular diseases \cite{holickHealthBenefitsVitamin2011} \cite{tavakoliVitaminSupplementationHighDensity2016}
+    \item Increased risk of autoimmune diseases \cite{holickHealthBenefitsVitamin2011}
+    \item Type I and Type II diabetes \cite{grantBenefitsRequirementsVitamin} \cite{holickHealthBenefitsVitamin2011} \cite{zittermannEstimatedBenefitsVitamin2010}
     \item Anemia (abnormal low level of hemoglobin, a substance which helps red blood vessels to carry oxygen to all organs)\cite{ANSESWHATAREVITAMINS} 
     \item Alzheimer's disease \cite{holickHealthBenefitsVitamin2011}
-    \item Breast, colon, pancreas and prostate cancer \cite{krishnanPotentialTherapeuticBenefits2012}\cite{holickHealthBenefitsVitamin2011}
+    \item Breast, colon, pancreas and prostate cancer \cite{holickHealthBenefitsVitamin2011} \cite{krishnanPotentialTherapeuticBenefits2012}
 \end{itemize}
 Furthermore, pregnant and lactating women need more Vitamin D than usual, as biochemical disturbances and bone issues can have occur in the infant \cite{grantBenefitsRequirementsVitamin}.
-A study from Karolina Lagowska \cite{lagowskaRelationshipVitaminStatus2018} reported that low vitamin D concentrations co-occur with disturbed menstrual cycles : women who did not meet the recommended level of Vitamin D had almost five times the odds of having menstrual cycle disorders as women who were above the recommended vitamin D level.
+In a study on 1048 pregnant women \cite{liuPotentialBenefitsVitamin2023}, 80\% of them presented a Vitamin D deficiency. 
+Another study from Karolina Lagowska \cite{lagowskaRelationshipVitaminStatus2018} reported that low Vitamin D concentrations co-occur with disturbed menstrual cycles : women who did not meet the recommended level of Vitamin D had almost five times the odds of having menstrual cycle disorders as women who were above the recommended Vitamin D level.
 
 \section{Where to find Vitamin D ?}
-The main source of Vitamin D is the sunlight. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=8cm]{vitamined2.jpg}
+\end{figure}
+\noindent
+The main source of Vitamin D is the sunlight. Note that diet alone CANNOT make up the needed daily intake of Vitamin D \cite{LESCUYER}. 
 Here are good sources of Vitamin D \cite{ANSES_VITAMIND} \cite{pharmaciepolygone}:
 \begin{itemize}
     \item Egg yolks
@@ -114,12 +169,15 @@ Here are good sources of Vitamin D \cite{ANSES_VITAMIND} \cite{pharmaciepolygone
     \item Vitamin D complementation
 \end{itemize}
 It is possible to get the daily intake of Vitamin D while following a vegan diet, as Vitamin D3 is produced by sun exposition and Vitamin D2 is mostly found in plants, c.f. Section \ref{What is Vitamin D ?}. \\
-Fun fact : vitamin D food fortification is the lowest in France \cite{ovesenGeographicalDifferencesVitamin2003}.
+Fun fact : Vitamin D food fortification is the lowest in France \cite{ovesenGeographicalDifferencesVitamin2003}.
 
 \section{Conclusion}
 As Vitamin D is used almost everywhere in our body, it is important to have an adequate intake of this vitamin. 
 Taking advantage of our ability to synthetize it easily, going out in the sunlight every day is an excellent way to meet our daily Vitamin D intake. 
-However, it is also one of the most common deficiency, thus Vitamin D rich food and complementation may help to solve this issue, while being careful as to not consume it in excess.
+Moreover, it is also very important to have an adequate intake of Magnesium to properly metabolize Vitamin D in the body.
+\\
+However, Vitamin D is one of the most common deficiency, thus Vitamin D rich food and complementation may help to solve this issue, while being careful as to not consume it in excess to avoid unwanted health issues.
 \newpage
+
 \printbibliography
 \end{document}
